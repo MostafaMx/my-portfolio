@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Certifications</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+    <div class="licenes-conteiner">
+            <nav class="sidebar" id="sidebarNav">
+                <ul>
+                  <li><a href="index.html#about-me">About Me</a></li>
+                  <li><a href="index.html#skills">Skills</a></li>
+                  <li><a href="licenses.html">Certifications</a></li>
+                  <li><a href="assets/documents/1_16607145598.pdf"  download id="resume" data-hover="Resume">Resume</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menuBtn">&#9776;</button>
+              <ul class="snip1226">
+                <li><a href="index.html#about-me" data-hover="About Me">About Me</a></li>
+                <li><a href="index.html#skills" data-hover="Skills">Skills</a></li>
+                <li class="active"><a href="licenses.html" data-hover="Certifications">Certifications</a></li>
+                <li><a href="assets/documents/1_16607145598.pdf"  download id="resume" data-hover="Resume">Resume</a></li>
+                <li><a href="index.html#comment-section" data-hover="Contact">Contact</a></li>
+              </ul>
+
+        <div class="grid-container">
+            <div class="card" onclick="showDetails('license1')">
+            <img src="assets/pictures/pyadvancedjpg.jpg" alt="License 1" />
+            <h2 class="licenes-title">Python Advanced</h2>
+            </div>
+            <div class="card" onclick="showDetails('license2')">
+            <img src="assets/pictures/pyproject.jpg" alt="License 2" />
+            <h2 class="licenes-title">Python Project</h2>
+            </div>
+        <!-- Add more cards as needed -->
+        </div>
+    
+
+        <div class="details-panel" id="details">
+            <img id="details-img" src="" alt="License Detail" />
+            <div  class="details-text">
+              <h2 id="datalis-title" class="licenes-title"></h2>
+              <p id="details-text"></p>
+            </div>
+        </div>
+  </div>
+
+  <script src="JS/licenses.js"></script>
+  <script src="JS/resume.js"></script>
+</body>
+</html>
